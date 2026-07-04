@@ -68,6 +68,8 @@ Reglas:
 - `idea_unica` no puede contener dos tesis.
 - Si hay video, el texto debe avanzar cada ~2s.
 - Si hay carrusel, cada slide debe aportar informacion nueva.
+- Antes de aceptar texto, invocar `texto-humano.md` o ejecutar `tools/score_hook.py`.
+- Si el hook queda por debajo de 80, reescribir o mantener como `borrador`.
 
 ---
 
@@ -79,6 +81,7 @@ Derivar a la skill correspondiente:
 - Carrusel -> `crear-carrusel.md`
 - Caption multired -> `caption-multired.md`
 - Lote -> `crear-lote.md`
+- Si hay montaje/render -> `montaje-estable.md`
 
 ---
 
@@ -160,6 +163,26 @@ provider_QA_RESULT:
   provider:
   status: pass|fail
   bloqueantes:
+
+MONTAGE_PRESET:
+  pieza_id:
+  preset:
+  script_o_template:
+  formato:
+  duracion_objetivo:
+  fps:
+  resolucion:
+  safe_area:
+  fuente_visual:
+  fuente_audio:
+  subtitulos:
+  color_grade:
+  transiciones:
+  variables_bloqueadas:
+  variable_en_prueba:
+  export_path:
+  reproducible: si|no
+  notas:
 ```
 
 Reglas de estado:
@@ -168,6 +191,7 @@ Reglas de estado:
 - Si falta `fuente_real` o `asset_origen`, maximo `borrador`.
 - Si es video y falta `video_provider_decision`, maximo `borrador`.
 - Si es video y falta `provider_QA_RESULT: pass`, maximo `revision_david`.
+- Si hay render/montaje y falta `MONTAGE_PRESET`, maximo `borrador`.
 
 ---
 

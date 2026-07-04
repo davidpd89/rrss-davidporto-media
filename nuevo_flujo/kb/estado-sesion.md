@@ -51,3 +51,13 @@ Decisiones nuevas: se anaden skills `imagen-assets.md`, `subtitulos-captions.md`
 Fallos evitados/detectados: evitar captions finales sacados de captioning visual, subtitulos demasiado agresivos por defecto, tratar clips de video largo como reels inventados desde cero y adoptar herramientas de publicacion con scraping/anti-detection
 Pendiente siguiente sesion: crear `assets_registry.csv` y `content_index.jsonl` con datos reales para que el agente pueda detectar repeticion y reutilizar ganadores
 [/SESSION_UPDATE]
+
+[SESSION_UPDATE]
+Fecha: 2026-07-04
+Tarea: endurecer base gratuita, texto anti-IA y montaje estable
+Fuentes leidas: feedback GPT adjunto sobre repo publico, feedback GPT sobre repos gratuitos, `nuevo_flujo/AGENTS.md`, `crear-reel.md`, `caption-multired.md`, `contratos-salida.md`, `tools/reel_template`
+Piezas tocadas: ninguna
+Decisiones nuevas: se crean `texto-humano.md`, `montaje-estable.md`, `NO_PUBLICAR.md`, `DEPENDENCIAS_EXTERNAS.md`, `content_index.jsonl`, `assets_registry.csv`, `tools/score_hook.py`, `tools/validate_contracts.py` y `tools/audit_lote.py`; se actualiza healthcheck para funcionar tambien en repo publico; se prohibe incorporar pagos/creditos/SaaS/autoposting como base sin permiso explicito
+Fallos evitados/detectados: textos con olor a IA pasan a descartarse o reescribirse; cada reel/render debe declarar `MONTAGE_PRESET`; el repo publico ya no falla por healthcheck ausente; indices existen sin datos inventados pero siguen avisando por falta de registros reales
+Pendiente siguiente sesion: alimentar `content_index.jsonl` y `assets_registry.csv` desde publicaciones/assets reales, luego endurecer `audit_lote.py` con similitud de hooks/captions
+[/SESSION_UPDATE]

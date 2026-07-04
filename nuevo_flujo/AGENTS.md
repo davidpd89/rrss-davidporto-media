@@ -44,7 +44,9 @@ Invocar la skill correspondiente segun la tarea:
 
 - **Pieza o lote completo listo para revision** -> `nuevo_flujo/skills/pipeline-contenido.md` <- punto de entrada principal.
 - **Crear lote semanal/multired** -> `nuevo_flujo/skills/crear-lote.md`.
+- **Reescribir texto con voz humana/anti-IA** -> `nuevo_flujo/skills/texto-humano.md`.
 - **Crear reel** -> `nuevo_flujo/skills/crear-reel.md`.
+- **Fijar montaje reproducible/local** -> `nuevo_flujo/skills/montaje-estable.md`.
 - **Elegir proveedor de video IA** -> `nuevo_flujo/skills/video-router.md`.
 - **Video con Flow/Veo** -> `nuevo_flujo/skills/video-flow.md`.
 - **Video con PixVerse** -> `nuevo_flujo/skills/video-pixverse.md`.
@@ -80,8 +82,10 @@ Invocar la skill correspondiente segun la tarea:
 10. No usar stock anonimo como primera solucion si hay referencia humana real o asset propio disponible.
 11. No usar captioning de imagen como caption final; solo sirve para diagnosticar/indexar assets.
 12. No usar subtitulos agresivos tipo MrBeast/Hormozi salvo decision explicita de la pieza.
-13. No inventar premios, reseñas, datos de venta, metricas ni hechos biograficos.
-14. Registrar el aprendizaje al cerrar. Si no queda memoria, el flujo fallo.
+13. No aceptar texto que suene a IA generica: reescribir con `texto-humano.md` y puntuar el hook.
+14. No cambiar montaje, timing, musica, color y plantilla a la vez. Elegir `MONTAGE_PRESET` antes de renderizar.
+15. No inventar premios, reseñas, datos de venta, metricas ni hechos biograficos.
+16. Registrar el aprendizaje al cerrar. Si no queda memoria, el flujo fallo.
 
 ---
 
@@ -95,6 +99,7 @@ Invocar la skill correspondiente segun la tarea:
 - NO reintentar una programacion fallida sin consultar antes `getScheduledPosts`.
 - NO usar hashtags genericos tipo `#fyp`, `#viral`, `#instagood`.
 - NO abrir reels con metaforas blandas de movimiento/distancia/peso si hay alternativa humana concreta.
+- NO producir piezas que caigan en `NO_PUBLICAR.md`.
 - NO cerrar una sesion sin `SESSION_UPDATE`.
 
 ---

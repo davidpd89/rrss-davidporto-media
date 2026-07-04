@@ -72,3 +72,29 @@ Antes de cerrar, responder:
 - Algun fondo/clip se parece a una pieza reciente?
 
 Si alguna respuesta es dudosa, variar el lote.
+
+---
+
+## SALIDA OBLIGATORIA
+
+Terminar siempre con:
+
+```yaml
+LOTE_AUDIT_RESULT:
+  status: pass|fail
+  rango_fechas:
+  piezas_revisadas:
+  equilibrio_70_20_10:
+  repeticion_tema:
+  repeticion_formato:
+  repeticion_visual:
+  repeticion_cta:
+  captions_similares:
+  saturacion_detectada:
+  metricool_ok:
+  bloqueantes:
+  avisos:
+  correcciones_requeridas:
+```
+
+Si el lote contiene reels o piezas renderizadas, cada pieza debe traer `MONTAGE_PRESET`. Si el lote contiene captions nuevos, cada hook debe haber pasado por `texto-humano.md` o `tools/score_hook.py`.

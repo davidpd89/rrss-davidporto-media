@@ -45,3 +45,27 @@ Responder como juez hostil:
 6. David se enfadaria por algo ya documentado como fallo?
 
 Si alguna respuesta incomoda aparece, corregir antes de entregar.
+
+---
+
+## SALIDA OBLIGATORIA
+
+Terminar siempre con:
+
+```yaml
+QA_RESULT:
+  status: pass|fail
+  fecha:
+  pieza_id:
+  p0_bloqueantes:
+  p1_correcciones:
+  texto_ok:
+  visual_ok:
+  fuente_ok:
+  red_ok:
+  repeticion_ok:
+  metricool_ok:
+  correcciones_aplicadas:
+```
+
+Si `status: fail`, explicar la correccion minima y no marcar la pieza como `lista_para_programar`.

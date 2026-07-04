@@ -8,6 +8,8 @@ Usar para adaptar una misma idea a Instagram, TikTok, Threads, Facebook, YouTube
 
 La idea puede ser la misma. El caption no.
 
+Antes de adaptar por red, pasar el texto por `texto-humano.md`. Si suena a agencia o a IA generica, reescribir antes de multiplicarlo.
+
 Cada red optimiza una senal distinta:
 
 - Instagram Reel: compartir/guardar, primera frase visible.
@@ -70,6 +72,7 @@ Incluir solo redes necesarias.
 ## CHECKS
 
 - No repetir texto visual.
+- No usar "descubre", "adentrate", "no es solo", "una historia que" ni tono de contraportada.
 - No usar la misma pregunta en todas las redes.
 - No mas de 3-5 hashtags salvo regla local distinta.
 - X maximo 2 hashtags si se usa.

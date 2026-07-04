@@ -19,6 +19,8 @@ Antes de elegir herramienta, invocar `video-router.md`.
 
 ## FASE 1 - GUION
 
+Antes de aceptar el guion, invocar `texto-humano.md`. Si el gancho queda en `reescribir` o `descartar`, no pasar a montaje.
+
 Reglas:
 
 1. Linea 1 = gancho. No contexto.
@@ -52,6 +54,8 @@ Antes de generar:
 
 ## FASE 3 - MONTAJE
 
+Antes de renderizar, invocar `montaje-estable.md` y elegir un `MONTAGE_PRESET`.
+
 Usar los sistemas vigentes del repo:
 
 - `04_Assets/sistema_reel_instagram.md`
@@ -69,10 +73,31 @@ QA minimo:
 - watermark tapado o ausente;
 - primer frame con gancho o imagen fuerte;
 - audio no repetido si hay piezas vecinas.
+- preset, script y parametros documentados.
 
 Salida obligatoria:
 
-```text
+```yaml
+MONTAGE_PRESET:
+  pieza_id:
+  preset:
+  script_o_template:
+  formato:
+  duracion_objetivo:
+  fps:
+  resolucion:
+  safe_area:
+  fuente_visual:
+  fuente_audio:
+  subtitulos:
+  color_grade:
+  transiciones:
+  variables_bloqueadas:
+  variable_en_prueba:
+  export_path:
+  reproducible: si|no
+  notas:
+
 QA_RESULT:
   status: pass|fail
   proveedor:

@@ -48,6 +48,94 @@ QA_RESULT:
 
 ---
 
+## HOOK_SCORE
+
+```yaml
+HOOK_SCORE:
+  hook:
+  claridad_1s:
+  especificidad_humana:
+  friccion_o_contradiccion:
+  voz_david:
+  novedad_vs_index:
+  penalizaciones:
+  total:
+  decision: producir|reescribir|descartar
+  motivo:
+```
+
+---
+
+## CONTENT_RECORD
+
+```yaml
+CONTENT_RECORD:
+  id:
+  fecha_creacion:
+  fecha_publicacion:
+  red:
+  formato:
+  estado:
+  categoria_70_20_10: interes|autor_proceso|libro_cta
+  tema:
+  hook:
+  texto_visual:
+  caption:
+  cta:
+  asset_ids:
+  fuente_real:
+  proveedor_video:
+  montaje_preset:
+  url_publicada:
+  metricas:
+  diagnostico:
+  repetir:
+  evitar:
+```
+
+---
+
+## LOTE_AUDIT_RESULT
+
+```yaml
+LOTE_AUDIT_RESULT:
+  status: pass|fail
+  rango_fechas:
+  piezas_revisadas:
+  equilibrio_70_20_10:
+  repeticion_tema:
+  repeticion_formato:
+  repeticion_visual:
+  repeticion_cta:
+  captions_similares:
+  saturacion_detectada:
+  metricool_ok:
+  bloqueantes:
+  avisos:
+  correcciones_requeridas:
+```
+
+---
+
+## POSTMORTEM_RESULT
+
+```yaml
+POSTMORTEM_RESULT:
+  rango_7d:
+  rango_30d:
+  top_por_red:
+  bottom_por_red:
+  patrones_a_repetir:
+  temas_a_pausar:
+  piezas_a_reciclar:
+  tests_ab:
+  cambios_horario:
+  cambios_proveedor:
+  archivos_actualizados:
+```
+
+---
+
 ## ASSET_RECORD
 
 ```yaml
@@ -113,6 +201,38 @@ CLIP_PLAN:
   qa:
   pendiente_edicion:
 ```
+
+---
+
+## MONTAGE_PRESET
+
+```yaml
+MONTAGE_PRESET:
+  pieza_id:
+  preset:
+  script_o_template:
+  formato:
+  duracion_objetivo:
+  fps:
+  resolucion:
+  safe_area:
+  fuente_visual:
+  fuente_audio:
+  subtitulos:
+  color_grade:
+  transiciones:
+  variables_bloqueadas:
+  variable_en_prueba:
+  export_path:
+  reproducible: si|no
+  notas:
+```
+
+---
+
+## TOOL_DECISION
+
+Ver `nuevo_flujo/kb/tool-registry.md`.
 
 ---
 
