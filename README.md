@@ -1,29 +1,18 @@
-# RRSS David Porto Media + Flujo
+# RRSS David Porto — Media Pública
 
-Repositorio publico para alojar media de redes de David Porto y exponer el flujo operativo de contenido a GPT/Codex.
+Repositorio **público** para alojar media de @davidportodiaz con URLs accesibles via GitHub Pages.
 
-## Contenido
+## Propósito
 
-- `images/` y `videos/`: media publicada o preparada.
-- `nuevo_flujo/`: agente de produccion, correccion y auditoria de contenido.
-- `tools/`: scripts gratuitos/locales para validar hooks, contratos, lotes y salud del flujo.
-- `content_index.jsonl`: indice de piezas. Ahora existe sin datos inventados; hay que alimentarlo con publicaciones reales.
-- `assets_registry.csv`: registro de assets. Ahora contiene cabecera; hay que alimentarlo con assets reales.
-- `DEPENDENCIAS_EXTERNAS.md`: rutas maestras que pueden vivir fuera de este repo.
-- `NO_PUBLICAR.md`: frenos de calidad para texto, visual y montaje.
+Metricool necesita una URL pública para programar reels, carruseles e imágenes en Instagram y Facebook.
+Este repo actúa como hosting ligero: subir el archivo, push, y la URL `https://davidpd89.github.io/rrss-davidporto-media/videos/<nombre>.mp4` queda disponible en 1-2 minutos.
 
-## Punto de entrada
+## Estructura
 
-Leer primero:
+- `images/` — Slides de carruseles e imágenes para publicaciones
+- `videos/` — Reels renderizados listos para publicar
 
-```text
-nuevo_flujo/AGENTS.md
-```
+## Código y estrategia
 
-Antes de producir o auditar un lote:
-
-```bash
-python tools/rrss_healthcheck.py
-```
-
-Si faltan las fuentes maestras externas, no programar ni marcar piezas como listas.
+El código, las herramientas Python, la estrategia editorial y los documentos de planificación
+están en el repositorio privado **rrss-davidporto-CODE**.

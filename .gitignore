@@ -1,0 +1,13 @@
+# Solo media (imágenes y vídeos para URLs públicas via GitHub Pages)
+# El código, estrategia y herramientas van en rrss-davidporto-CODE (privado)
+*.py
+*.md
+!README.md
+*.csv
+*.json
+*.jsonl
+*.yml
+*.yaml
+*.txt
+nuevo_flujo/
+tools/
